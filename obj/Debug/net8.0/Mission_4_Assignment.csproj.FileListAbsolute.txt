@@ -1,0 +1,5 @@
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.GeneratedMSBuildEditorConfig.editorconfig
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.AssemblyInfoInputs.cache
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.AssemblyInfo.cs
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.csproj.CoreCompileInputs.cache
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.sourcelink.json
