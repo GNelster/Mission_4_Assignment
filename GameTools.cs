@@ -31,23 +31,42 @@ public class GameTools
         for (int i = 0; i < 3; i++)
         {
             sum = board[i, 0] + board[i, 1] + board[i, 2];
-            if (Math.Abs(sum) == 3) { return true; }
+            if (Math.Abs(sum) == 3) 
+            { 
+                if (sum == 3)Console.WriteLine("Player 1 (X) wins! Congrats!");
+                else Console.WriteLine("Player 2 (O) wins! Congrats!");
+                
+                return true; 
+            }
         }
 
         // Column check
         for (int i = 0; i < 3; i++)
         {
             sum = board[0, i] + board[1, i] + board[2, i];
-            if (Math.Abs(sum) == 3) { return true; }
+            if (Math.Abs(sum) == 3) 
+            { 
+                if (sum == 3)Console.WriteLine("Player 1 (X) wins! Congrats!");
+                else Console.WriteLine("Player 2 (O) wins! Congrats!");
+                return true; 
+            }
         }
 
         // Diagonal: top left to bottom right
         sum = board[0, 0] + board[1, 1] + board[2, 2];
-        if (Math.Abs(sum) == 3) { return true; }
+        if (Math.Abs(sum) == 3) { 
+            if (sum == 3)Console.WriteLine("Player 1 (X) wins! Congrats!");
+            else Console.WriteLine("Player 2 (O) wins! Congrats!");
+            return true; 
+        }
 
         // Diagonal: bottom left to top right
         sum = board[0, 2] + board[1, 1] + board[2, 0];
-        if (Math.Abs(sum) == 3) { return true; }
+        if (Math.Abs(sum) == 3) { 
+            if (sum == 3)Console.WriteLine("Player 1 (X) wins! Congrats!");
+            else Console.WriteLine("Player 2 (O) wins! Congrats!");
+            return true; 
+        }
 
         return false;
     }
