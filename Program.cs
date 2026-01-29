@@ -32,7 +32,7 @@ while (!gameOver)
         col1--; // Adjust for the index of the array (col)
 
 
-        if (col1 > 3 || col1 < 0 || row1 > 3 || row1 < 0)
+        if (col1 > 2 || col1 < 0 || row1 > 2 || row1 < 0)
         {
             Console.WriteLine("Oops. You chose an invalid spot on the board. Try again.");
             continue;
@@ -67,14 +67,14 @@ while (!gameOver)
     while (true)
     {
         // Player 2 Input
-        Console.WriteLine("Player 2: Enter row (1 - 3): ");
+        Console.Write("Player 2: Enter row (1 - 3): ");
         row2 = int.Parse(Console.ReadLine());
         row2 --; // Adjust for the index of the array (row)
-        Console.WriteLine("Player 2: Enter column (1 - 3): ");
+        Console.Write("Player 2: Enter column (1 - 3): ");
         col2 = int.Parse(Console.ReadLine());
         col2--;
 
-        if (col2 > 3 || col2 < 0 || row2 > 3 || row2 < 0){
+        if (col2 > 2 || col2 < 0 || row2 > 2 || row2 < 0){
             Console.WriteLine("Oops. You chose an invalid spot on the board. Try again.");
             continue;
         }
