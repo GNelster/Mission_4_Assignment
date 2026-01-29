@@ -3,3 +3,13 @@
 /Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.AssemblyInfo.cs
 /Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.csproj.CoreCompileInputs.cache
 /Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.sourcelink.json
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/bin/Debug/net8.0/Mission_4_Assignment
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/bin/Debug/net8.0/Mission_4_Assignment.deps.json
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/bin/Debug/net8.0/Mission_4_Assignment.runtimeconfig.json
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/bin/Debug/net8.0/Mission_4_Assignment.dll
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/bin/Debug/net8.0/Mission_4_Assignment.pdb
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.dll
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/refint/Mission_4_Assignment.dll
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.pdb
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/Mission_4_Assignment.genruntimeconfig.cache
+/Users/archimedes/Documents/byu/classes/winter_2026/enterprise_dev/Mission_4_Assignment/obj/Debug/net8.0/ref/Mission_4_Assignment.dll

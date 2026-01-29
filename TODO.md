@@ -1,0 +1,2 @@
+- [ ] Add a valid pick check
+- [ ] 
