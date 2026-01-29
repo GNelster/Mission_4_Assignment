@@ -1,39 +1,42 @@
-﻿using GameTools;
-
-// Defining and instantiating variables
+﻿// Defining and instantiating variables
 bool gameOver = false;
 // Note that -1 is O, 0 is empty, and 1 is X
 sbyte[,] board = new sbyte[3, 3]; // 2D Array to make storing and retrieving game info easier
-GameTools gameTools = new GameTools();
+GameTools gameTools = new GameTools(board);
 int row1, col1;
 int row2, col2;
 
 // Welcome the user to the game
 Console.WriteLine("Welcome to our Tic Tac Toe Game! Hope you enjoy.");
-Console.Write("Preparing the game board");
-Thread.Sleep(300);
-Console.Write(".");
-Thread.Sleep(300);
-Console.Write(".");
-Thread.Sleep(300);
-Console.Write(".");
+// Console.Write("Preparing the game board");
+// Thread.Sleep(300);
+// Console.Write(".");
+// Thread.Sleep(300);
+// Console.Write(".");
+// Thread.Sleep(300);
+// Console.Write(".");
 Console.WriteLine("\nPlayer 1 is 'X', and Player 2 is 'O'.\n");
 
 // Ensures the game continues until the game ends
 while (!gameOver)
 {
-    // Print game board
-    gameTools.PrintBoard(board);
-
     while (true)
     {
+        gameTools.PrintBoard(board);
         // Player 1 Input
-        Console.WriteLine("Player 1: Enter row (1 - 3): ");
+        Console.Write("Player 1: Enter row (1 - 3): ");
         row1 = int.Parse(Console.ReadLine());
-        row1 = row1 - 1; // Adjust for the index of the array (row)
-        Console.WriteLine("Player 1: Enter column (1 - 3): ");
+        row1 --; // Adjust for the index of the array (row)
+        Console.Write("Player 1: Enter column (1 - 3): ");
         col1 = int.Parse(Console.ReadLine());
-        col1 = col1 - 1; // Adjust for the index of the array (col)
+        col1--; // Adjust for the index of the array (col)
+
+
+        if (col1 > 3 || col1 < 0 || row1 > 3 || row1 < 0)
+        {
+            Console.WriteLine("Oops. You chose an invalid spot on the board. Try again.");
+            continue;
+        }2
 
         // Check to see if spot is open on game board
         if (!(board[row1, col1] == 1 || board[row1, col1] == -1))
@@ -48,13 +51,15 @@ while (!gameOver)
         }
     }
 
-    // Check to see if there's a winner
-    int gameCheck1 = gameTools.GameOverCheck(board);
+    // Prints board after the first move
+    gameTools.PrintBoard(board);
 
-    // Logic for if Player 1 wins
-    if (gameCheck1 != 0)
+    // Check to see if there's a winner
+    bool gameCheck1 = gameTools.GameOverCheck(board);
+
+    // Logic for if a player wins
+    if (gameCheck1)
     {
-        gameTools.PrintBoard(board); // Prints board from method
         gameOver = true;
         break;
     }
@@ -64,10 +69,15 @@ while (!gameOver)
         // Player 2 Input
         Console.WriteLine("Player 2: Enter row (1 - 3): ");
         row2 = int.Parse(Console.ReadLine());
-        row2 = row2 - 1; // Adjust for the index of the array (row)
+        row2 --; // Adjust for the index of the array (row)
         Console.WriteLine("Player 2: Enter column (1 - 3): ");
         col2 = int.Parse(Console.ReadLine());
-        col2 = col2 - 1;
+        col2--;
+
+        if (col2 > 3 || col2 < 0 || row2 > 3 || row2 < 0){
+            Console.WriteLine("Oops. You chose an invalid spot on the board. Try again.");
+            continue;
+        }
 
         // Check to see if spot is open on game board
         if (!(board[row2, col2] == 1 || board[row2, col2] == -1))
@@ -83,12 +93,11 @@ while (!gameOver)
     }
 
     // Check to see if there's a winner
-    int gameCheck2 = gameTools.GameOverCheck(board);
+    bool gameCheck2 = gameTools.GameOverCheck(board);
 
     // Logic for if Player 2 wins
-    if (gameCheck2 != 0)
+    if (gameCheck2)
     {
-        gameTools.PrintBoard(board); // Prints board from method
         gameOver = true;
         break;
     }
